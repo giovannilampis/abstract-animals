@@ -12,9 +12,19 @@ public abstract class Animale {
 	public String getName() {
 		return name;
 	}
+	
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public void dormi() {
+		
+		System.out.println("Zzzzz");
+	}
+	
+	public abstract void verso();
+	
+	public abstract void mangia();
 	
 	@Override
 	public String toString() {
