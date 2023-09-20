@@ -1,5 +1,7 @@
 package org.pack.main;
 
+import org.pack.abs.AnimaleNuota;
+import org.pack.abs.AnimaleVola;
 import org.pack.abs.Aquila;
 import org.pack.abs.Cane;
 import org.pack.abs.Delfino;
@@ -15,13 +17,13 @@ public class Main {
 		
 		System.out.println("Animale 1:");
 		
+		faiNuotare(animale1);
+		
 		animale1.verso();
 		
 		animale1.mangia();
 		
 		animale1.dormi();
-		
-		animale1.nuota();
 		
 		System.out.println("-----------------------\n");
 
@@ -29,13 +31,13 @@ public class Main {
 		
 		System.out.println("Animale 2:");
 		
+		faiVolare(animale2);
+		
 		animale2.verso();
 		
 		animale2.mangia();
 		
 		animale2.dormi();
-		
-		animale2.vola();
 		
 		System.out.println("-----------------------\n");
 
@@ -43,13 +45,13 @@ public class Main {
 		
 		System.out.println("Animale 3:");
 		
+		faiVolare(animale3);
+		
 		animale3.verso();
 		
 		animale3.mangia();
 		
 		animale3.dormi();
-		
-		animale3.vola();
 		
 		System.out.println("-----------------------\n");
 
@@ -57,13 +59,25 @@ public class Main {
 		
 		System.out.println("Animale 4:");
 		
+		faiNuotare(animale4);
+		
 		animale4.verso();
 		
 		animale4.mangia();
 		
 		animale4.dormi();
 		
-		animale4.nuota();
 	}
 
+	static void faiVolare(AnimaleVola animale) {
+	
+		animale.vola();
+
+	}
+
+	static void faiNuotare(AnimaleNuota animale) {
+		
+		animale.nuota();
+
+	}
 }
