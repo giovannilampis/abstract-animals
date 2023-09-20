@@ -2,7 +2,11 @@ package org.pack.abs;
 
 public class Aquila extends Animale {
 
-    @Override
+    public Aquila() {
+        super("Aquila"); // Chiamiamo il costruttore della classe madre con un nome predefinito
+    }
+
+	@Override
     public void verso() {
         System.out.println("Screech!");
     }

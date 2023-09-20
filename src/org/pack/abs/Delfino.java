@@ -2,7 +2,11 @@ package org.pack.abs;
 
 public class Delfino extends Animale {
 
-    @Override
+    public Delfino() {
+        super("Delfino"); // Chiamiamo il costruttore della classe madre con un nome predefinito
+    }
+
+	@Override
     public void verso() {
         System.out.println("Ee-ee!");
     }

@@ -7,15 +7,16 @@ public abstract class Animale {
 	public Animale(String name) {
 		
 		setName(name);
+
 	}
 	
 	public String getName() {
 		return name;
 	}
-	
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	
 	public void dormi() {
 		
@@ -26,11 +27,4 @@ public abstract class Animale {
 	
 	public abstract void mangia();
 	
-	@Override
-	public String toString() {
-		
-		return getName()  
-				
-		;
-	}
 }
