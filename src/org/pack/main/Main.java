@@ -21,6 +21,8 @@ public class Main {
 		
 		animale1.dormi();
 		
+		animale1.nuota();
+		
 		System.out.println("-----------------------\n");
 
 		Passerotto animale2 = new Passerotto();
@@ -32,6 +34,8 @@ public class Main {
 		animale2.mangia();
 		
 		animale2.dormi();
+		
+		animale2.vola();
 		
 		System.out.println("-----------------------\n");
 
@@ -45,6 +49,8 @@ public class Main {
 		
 		animale3.dormi();
 		
+		animale3.vola();
+		
 		System.out.println("-----------------------\n");
 
 		Delfino animale4 = new Delfino();
@@ -56,5 +62,8 @@ public class Main {
 		animale4.mangia();
 		
 		animale4.dormi();
+		
+		animale4.nuota();
 	}
+
 }
